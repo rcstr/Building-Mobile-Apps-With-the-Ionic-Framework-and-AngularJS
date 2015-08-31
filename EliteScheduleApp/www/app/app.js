@@ -22,7 +22,11 @@ angular.module('eliteApp', ['ionic'])
     .state('home', {
       url: "/home",
       templateUrl: 'app/home/home.html'
+    })
+    .state('app', {
+      url: '/app',
+      templateUrl: 'app/layout/menu-layout.html'
     });
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/app');
 });
